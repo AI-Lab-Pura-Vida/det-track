@@ -6,4 +6,4 @@ model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 #model = YOLO("yolov8n.yaml").load("yolov8n.pt")  # build from YAML and transfer weights
 
 # Train the model
-results = model.train(data="../dataset/pineapple_yolo.yaml", epochs=100, imgsz=640)
+results = model.train(data="./pineapple_yolo.yaml", epochs=100, imgsz=640)
